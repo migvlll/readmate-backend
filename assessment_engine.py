@@ -31,7 +31,7 @@ LEVEL_LABELS = {
 }
 
 # Load Whisper ASR model once at startup ("base" balances speed and accuracy for English & Filipino)
-whisper_model = whisper.load_model("base")
+whisper_model = whisper.load_model("tiny")
 
 # Load trained Random Forest classifier
 RF_MODEL_PATH = os.path.join("models", "rf_reading_model.pkl")
